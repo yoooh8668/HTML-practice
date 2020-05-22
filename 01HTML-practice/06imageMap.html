@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+body {
+  background-image: url('05image/smiley.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  <!--
+  background-image: url('05image/smiley.gif');
+  background-attachment: fixed;
+  background-size: cover;
+  -->
+}
+</style>
+
+<body>
+
+<h2>Image Maps</h2>
+<p>click the word below.</p>
+<img src="05image/simple.png" alt="simple" usemap="#logo"  width="300" height="200" >
+
+<map name="logo">
+    <area shape="rect" coords=" 45 , 50 , 117, 78" href="06_1_W_image.html">
+    <area shape="rect" coords=" 126 , 12 , 162, 62" href="06_2_3_image.html">
+    <area shape="circle" coords="168,66,5" href="06_3_._image.html">
+    <area shape="polygon" coords="196,57,204,45,230,45,240,60,212,61" href="06_4_com_image.html">
+</map>
+
+<h2>Background Image</h2>
+<div style="background-image: url('../simple2.png');">
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+this is a background image.this is a background image.this is a background image.<br>
+</div>
+
+<!--
+<picture> can set the case for device.
+show the first match <source>picture and ignore the following element.
+For different device(resolution) display different image.
+(my com has 667px resolution, so it will show simple.png)
+-->
+<h2>picture seletion</h2>
+<picture>
+  <source media="(min-width: 1000px)" srcset="05image/gif1.gif">
+  <source media="(min-width: 500px)" srcset="05image/simple.png">
+  <img src="05image/smiley.gif" style="width:auto;">
+</picture>
+
+</body>
+</html>
+

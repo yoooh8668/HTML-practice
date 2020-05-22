@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>CSS-practice</title> 
+<head>
+<!--
+1.
+you can pre-set style of text in <head>.
+the whole page will follow th style of this style(if they don't have there own style.).
+
+2.
+use "#..." to create a special style.
+
+3.
+use "x.name" to create a style-class of x. 
+-->
+
+<!--this can't use comment, will drop remaining content..-->
+
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+#p01 {
+  border:1px solid powderblue;
+  color: blue;
+  font-family: courier;
+}
+#p02 {
+  border:1px solid powderblue;
+  padding: 50px;
+  color: blue;
+  font-family: courier;
+}
+#p03 {
+  border:1px solid powderblue;
+  margin: 50px;
+  color: blue;
+  font-family: courier;
+}
+
+#p04 {
+  border-top:5px black solid;
+  border-right:8px red double;
+  border-left:7px yellow dotted;
+  border-bottom:3px blue dashed;
+}
+
+p.error {
+  color: red;
+}
+p.highlight {
+  background-color: yellow;
+}
+</style>
+</head>
+
+
+
+<body>
+<h1>I am Heading</h1>
+<!--use id="..." to selete special style-->
+<p id="p01">I am #p01.</p>
+<p id="p01">I am #p01.</p>
+<p id="p02">I am #p02.</p>
+<p id="p02">I am #p02.</p>
+<p id="p03">I am #p03.</p>
+<p id="p03">I am #p03.</p>
+<p id="p04">I am #p04.</p>
+<p id="p04">I am #p04.</p>
+
+<!--use class="..." to selete style-class-->
+<p class="error">I am error.</p>
+<p class="error">I am error.</p>
+<p class="highlight">I am highlight.</p>
+<p class="highlight">I am highlight.</p>
+</body>
+</html>
