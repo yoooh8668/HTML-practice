@@ -1,5 +1,51 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+#ol01 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F4D03F;
+}
+
+#li01 a{
+  color:white;
+  text-decoration:none;
+  font-family:verdana;
+  float: left;
+  display:block;
+  text-align:center;
+  padding: 20px;
+}
+
+#li01 a:hover {
+  background-color: #FF0000;
+}
+
+</style>
+
+<!--this style has something different, you can try that.
+#li01{
+  float: left;
+  display:block;
+  text-align:center;
+  padding: 20px;
+}
+
+#li01:hover {
+  background-color: #FF0000;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+  font-family:verdana;
+}
+-->
+
+</head>
 <body>
 
 <h2>An HTML Unordered List(ul)</h2>
@@ -10,28 +56,28 @@
   <li>Milk</li>
 </ul>  
 
-<h2>Disc Bullets(default)</h2>
+<h2 id="Disc">Disc Bullets(default)</h2>
 <ul style="list-style-type:disc;">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ul>
 
-<h2>Circle Bullets</h2>
+<h2 id="Circle">Circle Bullets</h2>
 <ul style="list-style-type:circle;">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ul>
 
-<h2>Square Bullets</h2>
+<h2 id="Square">Square Bullets</h2>
 <ul style="list-style-type:square;">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ul>
 
-<h2>None</h2>
+<h2 id="None">None</h2>
 <ul style="list-style-type:none;">
   <li>Coffee</li>
   <li>Tea</li>
@@ -103,7 +149,19 @@
           <dd>- description data3-2(dd)</dd>
     </dl>
   </li>
-</ol> 
+</ol>
+
+
+<h2>Navigation Menu</h2>
+<p>Tags for unorder list Bullets.</p>
+<p>using <q>float: left;</q> to add Horizontal List.</p>
+<ol id="ol01">
+  <li id="li01"><a href="#Disc">Disc Bullets</a></li>
+  <li id="li01"><a href="#Circle">Circle Bullets</a></li>
+  <li id="li01"><a href="#Square">Square Bullets</a></li>
+  <li id="li01"><a href="#None">None Bullets</a></li>
+</ol>
+
 
 
 </body>
